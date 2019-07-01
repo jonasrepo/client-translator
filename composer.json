@@ -1,0 +1,22 @@
+{
+    "name": "jonasyeah/client-translator",
+    "description": "命令行翻译",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jonas",
+            "email": "jonasyeah@163.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "v3.4.26",
+        "jonasyeah/translator": "1.0.0",
+        "php": ">=5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jonas\\TranslatorClient\\": "src/"
+        },
+        "files": ["src/Support/helpers.php"]
+    }
+}

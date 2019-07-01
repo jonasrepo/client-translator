@@ -1,0 +1,29 @@
+#!/usr/bin/env php
+<?php
+/**
+ * tsl
+ *
+ * Author: Guo
+ * Email jonasyeah@163.com
+ *
+ * Date:   2019-06-29 17:51
+ */
+
+php_sapi_name() === 'cli' or die('只支持命令行模式');
+
+require __DIR__.'/vendor/autoload.php';
+
+$app = new \Symfony\Component\Console\Application('tsl', '1.0.0');
+
+try {
+    $output = new Symfony\Component\Console\Output\ConsoleOutput();
+    show_help($argv, $output);
+
+    $command = new \Jonas\TranslatorClient\TranslatorCommand('Translator');
+
+    $input = new Symfony\Component\Console\Input\ArgvInput($argv, $command->getDefinition());
+
+    $command->execute($input, $output);
+} catch (\Exception $e) {
+  $output->writeln(sprintf('<error>%s</error>', $e->getMessage()));
+}
