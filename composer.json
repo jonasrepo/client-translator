@@ -18,5 +18,8 @@
             "Jonas\\TranslatorClient\\": "src/"
         },
         "files": ["src/Support/helpers.php"]
-    }
+    },
+    "bin": [
+        "tsl"
+    ]
 }
