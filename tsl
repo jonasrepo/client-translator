@@ -13,8 +13,8 @@ php_sapi_name() === 'cli' or die('只支持命令行模式');
 
 if(file_exists(__DIR__.'/vendor/autoload.php')) {
     require __DIR__.'/vendor/autoload.php';
-}elseif(file_exists(__DIR__ . '/../../../autoload.php')){
-  require __DIR__ . '/../../../autoload.php';
+}elseif(file_exists(__DIR__ . '/../../autoload.php')){
+  require __DIR__ . '/../../autoload.php';
 }else {
   die('Composer is not installed , please run ' .PHP_EOL .'wget http://getcomposer.org/composer.phar && php composer.phar install' .PHP_EOL);
 }
