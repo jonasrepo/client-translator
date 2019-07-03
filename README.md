@@ -13,13 +13,13 @@
 ### 全局安装
 
 ``` shell
-$ composer global require jonasrepo/client-translator
+$ composer global require jonasyeah/client-translator
 ```
 
 ### 当前目录安装
 
 ``` shell
-$ composer create-project jonasrepo/client-translator
+$ composer create-project jonasyeah/client-translator
 ```
 
 ## 使用
