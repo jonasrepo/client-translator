@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "jonasyeah/translator": "1.0.0",
+        "jonasyeah/translator": "~1.0.0",
         "php": ">=5.6",
         "symfony/console": "~3.2 || ~4.0"
     },
